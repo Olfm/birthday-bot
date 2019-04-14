@@ -1,6 +1,7 @@
+package olfm.bdbot.main;
+
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Stream;
 
 public class DrKekov {
 
