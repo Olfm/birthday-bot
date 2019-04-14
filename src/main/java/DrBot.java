@@ -10,6 +10,7 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -19,8 +20,10 @@ import java.util.*;
 public class DrBot extends TelegramLongPollingBot {
     static DrKekov drKekov = new DrKekov();
 
+    public static void main(String[] args) throws IOException {
 
-    public static void main(String[] args) {
+
+
         drKekov.setbDays();
         ApiContextInitializer.init();
         TelegramBotsApi telegramBotApi = new TelegramBotsApi();
