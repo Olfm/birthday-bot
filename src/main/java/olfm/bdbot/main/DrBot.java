@@ -29,6 +29,7 @@ public class DrBot extends TelegramLongPollingBot {
     public static void main(String[] args) throws IOException {
 
         List<Person> people = readPersons();
+        System.out.println("\n" + people);
 
 
         drKekov.setbDays();
@@ -47,7 +48,6 @@ public class DrBot extends TelegramLongPollingBot {
         SendMessage sendMessage = new SendMessage();
         sendMessage.enableMarkdown(true);
         sendMessage.setChatId(message.getChatId().toString());
-//                sendMessage.setReplyToMessageId(message.getMessageId());
         sendMessage.setText(text);
 
         try {
@@ -242,7 +242,7 @@ public class DrBot extends TelegramLongPollingBot {
     }
 
     @SneakyThrows
-    private static List<Person> readPersons() {
+    private static List<Person> readPersons() throws IOException {
         ObjectMapper om = new ObjectMapper();
         String filename = "src/main/resources/persons.json";
         return om.readValue(new FileInputStream(filename), new TypeReference<List<Person>>() {
