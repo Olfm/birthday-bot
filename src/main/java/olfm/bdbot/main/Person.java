@@ -8,8 +8,14 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 public class Person {
-    public String name;
+    public String firstName;
+    public String lastName;
     public String birthday;
-    public int chatId;
+    public Long chatId;
     public List<String> alterNames;
+
+
+
 }
+
+
