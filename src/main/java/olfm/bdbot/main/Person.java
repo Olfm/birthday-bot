@@ -13,7 +13,7 @@ public class Person {
     public String birthday;
     public Long chatId;
     public List<String> alterNames;
-
+    public List<String> wishList;
 
 
 }

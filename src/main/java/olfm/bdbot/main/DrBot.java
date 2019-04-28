@@ -3,6 +3,7 @@ package olfm.bdbot.main;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
+import org.joda.time.LocalDate;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
@@ -18,19 +19,28 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 
 public class DrBot extends TelegramLongPollingBot {
+    public static void main(String[] args) throws ParseException {
 
-    public static void main(String[] args) throws IOException {
+        HashMap<String, LocalDate> people = new HashMap<>();
+        for (Person p: readPersons()){
+            String pattern = "dd-MM";
+            Date date = new SimpleDateFormat(pattern).parse(p.birthday);
+            people.put("\n" + p.firstName + " " + p.lastName + " \t", (LocalDate.fromDateFields(date)));
+
+        }
+        System.out.println(people);
 
 
 
-            ApiContextInitializer.init();
+
+
+        ApiContextInitializer.init();
             TelegramBotsApi telegramBotApi = new TelegramBotsApi();
 
             try {
@@ -60,13 +70,6 @@ public class DrBot extends TelegramLongPollingBot {
         }
     }
 
-
-
-    String i = "";
-
-
-
-
     public void onUpdateReceived(Update update) {
             Message message = update.getMessage();
             if (message != null && message.hasText()) {
@@ -84,11 +87,20 @@ public class DrBot extends TelegramLongPollingBot {
                         }
                         break;
                     case "весь список":
+                        String i = "";
                         for (Person p : readPersons()) {
                             i += p.firstName + " " + p.lastName + " — " + "\t" + p.birthday + "\n";
                         }
                         sendMsg(message, i);
-                        i = "";
+                        break;
+                    case "миша":
+                    case "маша":
+                    case "любовь":
+                    case "люба":
+                    case "леша":
+                    case "алеша":
+                    case "алексей":
+                        sendMsg(message, "Ты мне фамилию — я тебе дату");
                         break;
                     default:
                         boolean answer = false;
@@ -104,7 +116,17 @@ public class DrBot extends TelegramLongPollingBot {
                         }
 
                     case "Ближайший ДР":
+//                        for (Person p: readPersons()) {
+//                            try {
+//                                System.out.println(convertDate(p.birthday));
+//                            } catch (ParseException e) {
+//                                e.printStackTrace();
+//                            }
+//
+//                        }
                         break;
+
+
 
                 }
             }
@@ -158,6 +180,13 @@ public class DrBot extends TelegramLongPollingBot {
     public String getBotToken() {
         return "820777468:AAH5Yf7kD1ykCKhzd-NlHr2ER7ehndB1-2c";
     }
+
+//    public static Date convertDate(String birthday) throws ParseException {
+//        SimpleDateFormat format = new SimpleDateFormat("dd.MM");
+//        Date drDate = format.parse(birthday);
+//
+//        return drDate;
+//    }
 
 
 }

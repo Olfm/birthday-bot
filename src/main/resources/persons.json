@@ -2,7 +2,7 @@
   {
     "firstName": "Тим",
     "lastName": "Перов",
-    "birthday": "08.03",
+    "birthday": "08-03",
     "chatId": "34756811",
     "alterNames": [
       "тим",
@@ -12,77 +12,98 @@
       "кэп",
       "мама",
       "папа"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Оля",
     "lastName": "Пронина",
-    "birthday": "20.07",
+    "birthday": "20-07",
     "chatId": "124520406",
     "alterNames": [
       "оля",
       "водка",
       "пронина"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Миша",
     "lastName": "Ожегов",
-    "birthday": "11.01",
+    "birthday": "11-01",
     "chatId": "236891285",
     "alterNames": [
       "миша ожегов",
       "ожегов"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Илья",
     "lastName": "Илющенко",
-    "birthday": "13.01",
+    "birthday": "13-01",
     "chatId": "34593730",
     "alterNames": [
       "илюша",
       "илья",
       "илющенко",
       "илья илющенко"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Миша",
     "lastName": "Суханов",
-    "birthday": "29.01",
+    "birthday": "29-01",
     "chatId": "254160871",
     "alterNames": [
       "суханов миша",
       "суханов"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Любовь",
     "lastName": "Светикова",
-    "birthday": "31.01",
+    "birthday": "31-01",
     "chatId": "580533331",
     "alterNames": [
       "светикова",
       "светикова любовь",
       "любовь светикова"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Маша",
     "lastName": "Сибирева",
-    "birthday": "25.02",
+    "birthday": "25-02",
     "chatId": "181022060",
     "alterNames": [
       "сибирева",
       "сибирёва",
       "маша сибирева"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Вова",
     "lastName": "Данилин",
-    "birthday": "16.04",
+    "birthday": "16-04",
     "chatId": "192987639",
     "alterNames": [
       "данила",
@@ -96,12 +117,15 @@
       "вовк",
       "владимир",
       "владимир михайлович"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Маша",
     "lastName": "Федорова",
-    "birthday": "18.04",
+    "birthday": "18-04",
     "chatId": "152677178",
     "alterNames": [
       "маруся",
@@ -114,24 +138,30 @@
       "фёдорова маша",
       "федорова",
       "фёдорова"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Аня",
     "lastName": "Вихрева",
-    "birthday": "07.09",
+    "birthday": "07-09",
     "chatId": "368246491",
     "alterNames": [
       "аня",
       "анна",
       "аня вихрева",
       "анна вихрева"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Сережа",
     "lastName": "Ваняшин",
-    "birthday": "11.09",
+    "birthday": "11-09",
     "chatId": "14458329",
     "alterNames": [
       "ваняшин",
@@ -139,45 +169,57 @@
       "ваня",
       "ваня сережин",
       "сережа ваняшин"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Леша",
     "lastName": "Белов",
-    "birthday": "03.10",
+    "birthday": "03-10",
     "chatId": "621923231",
     "alterNames": [
       "леша белов",
       "белов"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Дима",
     "lastName": "Хващевский",
-    "birthday": "10.10",
+    "birthday": "10-10",
     "chatId": "307134613",
     "alterNames": [
       "хващевский",
       "хващевский дима",
       "дима",
       "дима хващевский"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Вика",
     "lastName": "Афанасьева",
-    "birthday": "20.10",
+    "birthday": "20-10",
     "chatId": "776829348",
     "alterNames": [
       "вика",
       "виктория",
       "афанасьева"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Паша",
     "lastName": "Рудюк",
-    "birthday": "22.11",
+    "birthday": "22-11",
     "chatId": "302284079",
     "alterNames": [
       "паша",
@@ -189,22 +231,28 @@
       "паша рудюк",
       "павлуша",
       "павлуха"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Миша",
     "lastName": "Яцко",
-    "birthday": "29.11",
+    "birthday": "29-11",
     "chatId": "137433585",
     "alterNames": [
       "миша яцко",
       "яцко"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Люба",
     "lastName": "Патык",
-    "birthday": "30.11",
+    "birthday": "30-11",
     "chatId": "208085908",
     "alterNames": [
       "любовь патык",
@@ -213,23 +261,29 @@
       "любовь степановна",
       "степановна",
       "патык любовь степановна"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Леша",
     "lastName": "Свирин",
-    "birthday": "06.12",
+    "birthday": "06-12",
     "chatId": "589846390",
     "alterNames": [
       "свирин",
       "леша свирин",
       "алексей свирин"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Алекс",
     "lastName": "Талалайкин",
-    "birthday": "22.01",
+    "birthday": "22-01",
     "chatId": "147457969",
     "alterNames": [
       "пес",
@@ -239,12 +293,15 @@
       "alex",
       "алешка",
       "алёшка"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Натали",
     "lastName": "Рубайлова",
-    "birthday": "14.08",
+    "birthday": "14-08",
     "chatId": "257912533",
     "alterNames": [
       "натали",
@@ -252,12 +309,15 @@
       "рубайлова",
       "тоха",
       "антоха"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Настя",
     "lastName": "Кошевая",
-    "birthday": "20.04",
+    "birthday": "20-04",
     "chatId": "404446676",
     "alterNames": [
       "настя",
@@ -266,12 +326,15 @@
       "персик",
       "настя кошевая",
       "анастасия кошевая"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Ксюша",
     "lastName": "Гуреева",
-    "birthday": "27.06",
+    "birthday": "27-06",
     "chatId": "141661457",
     "alterNames": [
       "ксюша",
@@ -282,18 +345,24 @@
       "ксюша гуреева",
       "ксения артемовна",
       "ксения артёмовна"
+    ],
+    "wishList": [
+
     ]
   },
   {
     "firstName": "Илья",
     "lastName": "Советов",
-    "birthday": "03.02",
+    "birthday": "03-02",
     "chatId": "6539665",
     "alterNames": [
       "советов",
       "илья советов",
       "советов илья",
       "илья николаевич"
+    ],
+    "wishList": [
+
     ]
   }
 ]
