@@ -2,7 +2,7 @@
   {
     "firstName": "Тим",
     "lastName": "Перов",
-    "birthday": "08-03",
+    "birthday": "08.03",
     "chatId": "34756811",
     "alterNames": [
       "тим",
@@ -20,7 +20,7 @@
   {
     "firstName": "Оля",
     "lastName": "Пронина",
-    "birthday": "20-07",
+    "birthday": "20.07",
     "chatId": "124520406",
     "alterNames": [
       "оля",
@@ -34,7 +34,7 @@
   {
     "firstName": "Миша",
     "lastName": "Ожегов",
-    "birthday": "11-01",
+    "birthday": "11.01",
     "chatId": "236891285",
     "alterNames": [
       "миша ожегов",
@@ -47,7 +47,7 @@
   {
     "firstName": "Илья",
     "lastName": "Илющенко",
-    "birthday": "13-01",
+    "birthday": "13.01",
     "chatId": "34593730",
     "alterNames": [
       "илюша",
@@ -62,7 +62,7 @@
   {
     "firstName": "Миша",
     "lastName": "Суханов",
-    "birthday": "29-01",
+    "birthday": "29.01",
     "chatId": "254160871",
     "alterNames": [
       "суханов миша",
@@ -75,7 +75,7 @@
   {
     "firstName": "Любовь",
     "lastName": "Светикова",
-    "birthday": "31-01",
+    "birthday": "31.01",
     "chatId": "580533331",
     "alterNames": [
       "светикова",
@@ -89,7 +89,7 @@
   {
     "firstName": "Маша",
     "lastName": "Сибирева",
-    "birthday": "25-02",
+    "birthday": "25.02",
     "chatId": "181022060",
     "alterNames": [
       "сибирева",
@@ -103,7 +103,7 @@
   {
     "firstName": "Вова",
     "lastName": "Данилин",
-    "birthday": "16-04",
+    "birthday": "16.04",
     "chatId": "192987639",
     "alterNames": [
       "данила",
@@ -125,7 +125,7 @@
   {
     "firstName": "Маша",
     "lastName": "Федорова",
-    "birthday": "18-04",
+    "birthday": "18.04",
     "chatId": "152677178",
     "alterNames": [
       "маруся",
@@ -146,7 +146,7 @@
   {
     "firstName": "Аня",
     "lastName": "Вихрева",
-    "birthday": "07-09",
+    "birthday": "07.09",
     "chatId": "368246491",
     "alterNames": [
       "аня",
@@ -161,7 +161,7 @@
   {
     "firstName": "Сережа",
     "lastName": "Ваняшин",
-    "birthday": "11-09",
+    "birthday": "11.09",
     "chatId": "14458329",
     "alterNames": [
       "ваняшин",
@@ -177,7 +177,7 @@
   {
     "firstName": "Леша",
     "lastName": "Белов",
-    "birthday": "03-10",
+    "birthday": "03.10",
     "chatId": "621923231",
     "alterNames": [
       "леша белов",
@@ -190,7 +190,7 @@
   {
     "firstName": "Дима",
     "lastName": "Хващевский",
-    "birthday": "10-10",
+    "birthday": "10.10",
     "chatId": "307134613",
     "alterNames": [
       "хващевский",
@@ -205,7 +205,7 @@
   {
     "firstName": "Вика",
     "lastName": "Афанасьева",
-    "birthday": "20-10",
+    "birthday": "20.10",
     "chatId": "776829348",
     "alterNames": [
       "вика",
@@ -219,7 +219,7 @@
   {
     "firstName": "Паша",
     "lastName": "Рудюк",
-    "birthday": "22-11",
+    "birthday": "22.11",
     "chatId": "302284079",
     "alterNames": [
       "паша",
@@ -239,7 +239,7 @@
   {
     "firstName": "Миша",
     "lastName": "Яцко",
-    "birthday": "29-11",
+    "birthday": "29.11",
     "chatId": "137433585",
     "alterNames": [
       "миша яцко",
@@ -252,7 +252,7 @@
   {
     "firstName": "Люба",
     "lastName": "Патык",
-    "birthday": "30-11",
+    "birthday": "30.11",
     "chatId": "208085908",
     "alterNames": [
       "любовь патык",
@@ -269,7 +269,7 @@
   {
     "firstName": "Леша",
     "lastName": "Свирин",
-    "birthday": "06-12",
+    "birthday": "06.12",
     "chatId": "589846390",
     "alterNames": [
       "свирин",
@@ -283,7 +283,7 @@
   {
     "firstName": "Алекс",
     "lastName": "Талалайкин",
-    "birthday": "22-01",
+    "birthday": "22.01",
     "chatId": "147457969",
     "alterNames": [
       "пес",
@@ -301,7 +301,7 @@
   {
     "firstName": "Натали",
     "lastName": "Рубайлова",
-    "birthday": "14-08",
+    "birthday": "14.08",
     "chatId": "257912533",
     "alterNames": [
       "натали",
@@ -317,7 +317,7 @@
   {
     "firstName": "Настя",
     "lastName": "Кошевая",
-    "birthday": "20-04",
+    "birthday": "20.04",
     "chatId": "404446676",
     "alterNames": [
       "настя",
@@ -334,7 +334,7 @@
   {
     "firstName": "Ксюша",
     "lastName": "Гуреева",
-    "birthday": "27-06",
+    "birthday": "27.06",
     "chatId": "141661457",
     "alterNames": [
       "ксюша",
@@ -353,7 +353,7 @@
   {
     "firstName": "Илья",
     "lastName": "Советов",
-    "birthday": "03-02",
+    "birthday": "03.02",
     "chatId": "6539665",
     "alterNames": [
       "советов",

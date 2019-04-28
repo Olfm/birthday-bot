@@ -15,7 +15,6 @@ public class Person {
     public List<String> alterNames;
     public List<String> wishList;
 
-
 }
 
 
