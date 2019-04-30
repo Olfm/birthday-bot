@@ -25,7 +25,6 @@ import java.util.Set;
 public class DrBot extends TelegramLongPollingBot {
     public static void main(String[] args) {
 
-
         ApiContextInitializer.init();
         TelegramBotsApi telegramBotApi = new TelegramBotsApi();
         try {
@@ -34,6 +33,8 @@ public class DrBot extends TelegramLongPollingBot {
             e.printStackTrace();
         }
     }
+
+    public static volatile String scenario = "Standard";
 
 
     public void sendMsg(Message message, String text) {
@@ -52,68 +53,90 @@ public class DrBot extends TelegramLongPollingBot {
         }
     }
 
-
-
     public void onUpdateReceived(Update update) {
+        DateCheck dateCheck = new DateCheck();
+        dateCheck.controlDate();
         Message message = update.getMessage();
         if (message != null && message.hasText()) {
-            switch (message.getText().toLowerCase()) {
-                case "/start":
-                    boolean hello = true;
-                    for (Person p : readPersons()) {
-                        if (message.getChatId().equals(p.chatId)) {
-                            sendMsg(message, "Привет, " + p.firstName + "! \n\nВ отличие от бывших я помню, что у тебя день рождения " + p.birthday + " :)" + "\n\nА еще подскажу, когда у коллег. ");
-                            hello = true;
+            if (scenario.equals("Standard")) {
+                switch (message.getText().toLowerCase()) {
+                    case "/start":
+                        boolean hello = true;
+                        for (Person p : readPersons()) {
+                            if (message.getChatId().equals(p.chatId)) {
+                                sendMsg(message, "Привет, " + p.firstName + "! \n\nВ отличие от бывших я помню, что у тебя день рождения " + p.birthday + " :)" + "\n\nА еще подскажу, когда у коллег. ");
+                                hello = true;
+                            }
                         }
-                    }
-                    if (!hello) {
-                        sendMsg(message, "Привет, я о тебе ничего не знаю, но о других напомню :)");
-                    }
-                    break;
-                case "весь список":
-                    String i = "";
-                    for (Person p : readPersons()) {
-                        i += p.firstName + " " + p.lastName + " — " + "\t" + p.birthday + "\n";
-                    }
-                    sendMsg(message, i);
-                    break;
-                case "миша":
-                case "маша":
-                case "любовь":
-                case "люба":
-                case "леша":
-                case "алеша":
-                case "алексей":
-                    sendMsg(message, "Ты мне фамилию — я тебе дату");
-                    break;
-                default:
-                    boolean answer = false;
-                    for (Person p : readPersons()) {
-                        Set<String> set = new HashSet<>(p.alterNames);
-                        if (set.contains(message.getText().toLowerCase())) {
-                            sendMsg(message, p.firstName + " будет отмечать др " + p.birthday);
-                            answer = true;
+                        if (!hello) {
+                            sendMsg(message, "Привет, я о тебе ничего не знаю, но о других напомню :)");
                         }
-                    }
-                    if (!answer) {
-                        sendMsg(message, "Я такого не знаю, прости");
-                    }
+                        break;
+                    case "весь список":
+                        StringBuilder i = new StringBuilder();
+                        for (Person p : readPersons()) {
+                            i.append(p.firstName).append(" ").append(p.lastName).append(" — ").append("\t").append(p.birthday).append("\n");
+                        }
+                        sendMsg(message, i.toString());
+                        break;
+                    case "миша":
+                    case "маша":
+                    case "любовь":
+                    case "люба":
+                    case "леша":
+                    case "алеша":
+                    case "алексей":
+                        sendMsg(message, "Ты мне фамилию — я тебе дату");
+                        break;
+                    default:
+                        boolean answer = false;
+                        for (Person p : readPersons()) {
+                            Set<String> set = new HashSet<>(p.alterNames);
+                            if (set.contains(message.getText().toLowerCase())) {
+                                sendMsg(message, p.firstName + " будет отмечать др " + p.birthday);
+                                answer = true;
 
-                case "Ближайший ДР":
-//                        for (Person p: readPersons()) {
-//                            try {
-//                                System.out.println(convertDate(p.birthday));
-//                            } catch (ParseException e) {
-//                                e.printStackTrace();
-//                            }
-//
-//                        }
-                    break;
+                            }
+                        }
+                        if (!answer) {
+                            sendMsg(message, "Я такого не знаю, прости");
+                        }
+
+                    case "Ближайший ДР":
 
 
+                        break;
+
+                }
             }
         }
     }
+//
+//            if (scenario.equals("PushMe")){
+//                for (Person p : readPersons()) {
+//                    if (p.admin){
+//                        sendMsg(message, "Пора создавать чат для");
+//                    }
+//                }
+//
+//
+//                // что и кому отправляем
+//
+//
+//                scenario = "Standard Scenario";
+//
+//            }
+
+//            if (scenario.equals("")){
+//
+//                scenario = "Standard Scenario";
+//
+//
+//            }
+
+
+
+
 
     @SneakyThrows
     public static List<Person> readPersons() {
@@ -146,14 +169,6 @@ public class DrBot extends TelegramLongPollingBot {
         replyKeyboardMarkup.setKeyboard(keyboardRowList);
     }
 
-    public  void notificationDr(){
-        DateCheck dateCheck = new DateCheck();
-        dateCheck.controlDate();
-        if(dateCheck.timeTrouble){
-            sendMsg(null, "Время создавать чать для дня рождения!");
-            // доделать так, чтобы было минимум кода тут, основное в классе чек Дата
-        }
-    }
 
 
     public String getBotUsername() {

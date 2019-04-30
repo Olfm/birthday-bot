@@ -15,7 +15,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Оля",
@@ -29,7 +30,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Миша",
@@ -42,7 +44,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Илья",
@@ -57,7 +60,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Миша",
@@ -70,7 +74,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Любовь",
@@ -84,7 +89,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Маша",
@@ -98,7 +104,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Вова",
@@ -120,7 +127,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Маша",
@@ -141,7 +149,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": true
   },
   {
     "firstName": "Аня",
@@ -156,7 +165,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Сережа",
@@ -172,7 +182,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Леша",
@@ -185,7 +196,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Дима",
@@ -200,7 +212,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Вика",
@@ -214,7 +227,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Паша",
@@ -234,7 +248,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Миша",
@@ -247,7 +262,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Люба",
@@ -264,7 +280,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Леша",
@@ -278,7 +295,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Алекс",
@@ -296,7 +314,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Натали",
@@ -312,7 +331,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Настя",
@@ -329,7 +349,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Ксюша",
@@ -348,7 +369,8 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   },
   {
     "firstName": "Илья",
@@ -363,6 +385,7 @@
     ],
     "wishList": [
 
-    ]
+    ],
+    "admin": false
   }
 ]

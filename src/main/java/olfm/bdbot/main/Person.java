@@ -14,6 +14,7 @@ public class Person {
     public Long chatId;
     public List<String> alterNames;
     public List<String> wishList;
+    public boolean admin;
 
 }
 
